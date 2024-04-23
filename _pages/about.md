@@ -18,8 +18,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Test your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+As a Risk Operational Analyst with Honolulu Disposal Service, I engage with the intricacies of data to navigate the complexities of operational risk. My educational path at the University of Hawaii, where I studied Economics and Psychology with a focus on Econometrics and Research Methods, has equipped me with the analytical acumen to transform data into strategic assets. This expertise is demonstrated through my initiative in establishing a comprehensive data infrastructure, incorporating tools such as Power BI and Python, to streamline and enhance our analytical processes.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My practical experience extends to the development of specialized programs for Wilcoxon hypothesis testing and conducting thorough exploratory data analyses. These endeavors have refined my ability to distill nuanced insights from data—a skill I further cultivated through a collaborative research project on risk assessment, leading to the demystification of statistical risk measures.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Fluent in programming languages like Python, Julia, and R, and with a firm grasp of web development and computational principles, my goal is to seamlessly transition into the finance sector. Here, I aspire to apply my data dexterity to fortify financial strategies and risk resolution.
+
+Originating from the vibrant landscapes of Hawaii, my passion for exploration transcends the professional sphere, as I revel in the rich tapestry of cultures experienced through my travels. This global perspective is a silent partner in my analytical pursuits, reminding me that data, much like life, is an adventure — best navigated with agility and an open mind.
