@@ -1,16 +1,13 @@
 ---
 layout: page
-title: project 3 with very long name
+title: Bank Churn Rate Forecast with LightGBM (Machine Learning)
 description: a project that redirects to another website
 img: assets/img/7.jpg
-redirect: https://unsplash.com
 importance: 3
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Forecasting bank churn rate using a LightGBM classifier involves predicting whether customers are likely to leave the bank based on various attributes and transaction behaviors. LightGBM, or Light Gradient Boosting Machine, is a highly efficient and scalable implementation of gradient boosting frameworks, known for handling large amounts of data and improving speed and performance through its tree-based learning algorithms. The process starts with collecting and pre-processing customer data, which might include age, salary, account balance, transaction history, and other demographic or behavioral factors. This data is then used to train the LightGBM model, where it learns to identify patterns and characteristics of customers who have historically churned. Features are used to train the model, applying gradient-based optimization and decision trees to minimize prediction errors. The model’s effectiveness in forecasting churn is typically evaluated through performance metrics like accuracy, precision, and recall. Once validated, the LightGBM classifier can be deployed to predict churn in real-time, enabling the bank to implement targeted retention strategies for at-risk customers, thus potentially reducing churn rates and enhancing customer retention efforts.
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
