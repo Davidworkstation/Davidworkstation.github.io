@@ -1,16 +1,16 @@
 ---
 layout: page
-title: project 2
+title: Brownian Motions
 description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+img: assets/img/GBM_noylims.png
 importance: 2
 category: work
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Brownian motion, named after the botanist Robert Brown, is a mathematical model used to describe random movements, originally observed in particles suspended in fluid. In the context of stocks and econometrics, it's referred to as the Geometric Brownian Motion (GBM). This model is crucial for modeling stock prices because it incorporates key characteristics of stock behavior: the prices are continuous (no jumps), and the percentage changes in prices are normally distributed with constant drift (mean return rate) and volatility (variance of returns), making stock price movements both random and directionally influenced over time.
+
+GBM is widely used in financial mathematics, particularly in the Black-Scholes model for option pricing, where it helps calculate the fair prices of options, assuming that the underlying stock prices follow a lognormal distribution. This assumption allows for the modeling of stock price dynamics over time, considering the continuous compounding of returns and the randomness introduced by market forces. In practical terms, this means predicting future stock prices based on historical volatility and expected return, providing a fundamental tool for risk management and investment strategies in financial markets.
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
@@ -18,12 +18,12 @@ To give your project a background in the portfolio page, just add the img tag to
     layout: page
     title: project
     description: a project with a background image
-    img: /assets/img/12.jpg
+    img: assets/img/GBM_noylims.png
     ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/GBM_noylims.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}

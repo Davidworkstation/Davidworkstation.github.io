@@ -1,19 +1,23 @@
 ---
 layout: page
-title: Brownian Motions
+title: Conditionally Independent Diffusion (CID) model
 description: yes
-img: assets/img/12.jpg
+img: assets/img/CID_Parameters.png
 importance: 1
 category: work
 related_publications: true
 ---
 
-test
+The Conditionally Independent Diffusion (CID) model in econometrics is a specific framework used primarily in the analysis of financial time series, especially for interest rate modeling or more generally in asset pricing models where multiple factors influence the price dynamics. The CID model is built on the principle that certain state variables (which could represent economic factors like short-term interest rates, inflation rates, etc.) evolve independently under certain conditions, but their overall behavior is driven by a latent stochastic process that impacts these variables in a correlated manner.
+
+In the CID model, each variable is modeled as a diffusion process, which is a type of stochastic process with continuous paths. These diffusion processes are assumed to be conditionally independent given the path of some underlying latent variables. This underlying structure allows the model to capture complex interactions between multiple factors while maintaining the tractability of analysis by assuming independence conditioned on the latent processes.
+
+This model is particularly valuable for capturing the dynamics of variables that are influenced by common economic shocks or policies but behave independently when conditioned on these common influences. It's useful in settings where multiple assets or rates need to be modeled simultaneously, allowing for a more nuanced understanding of their interactions and dependencies.
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
     ---
-    print("code can go her, apparently")
+    print("code can go here, apparently")
     ---
 
 <div class="row">
