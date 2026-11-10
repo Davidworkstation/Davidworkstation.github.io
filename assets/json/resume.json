@@ -1,26 +1,20 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "David Bannister",
+    "label": "Data Analytics Engineer",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "db2019@hawaii.edu",
+    "phone": "",
+    "url": "https://davidworkstation.github.io/",
+    "summary": "Data professional specializing in SQL, Python, and workflow automation, building reliable data pipelines and reporting solutions that support business decisions.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "",
+      "postalCode": "",
+      "city": "Oahu",
       "countryCode": "US",
-      "region": "California"
+      "region": "Hawaii"
     },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    "profiles": []
   },
   "work": [
     {
