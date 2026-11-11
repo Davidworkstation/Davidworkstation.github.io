@@ -2,26 +2,29 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: "Data Analytics & Engineering | SQL • Python • ETL • Automation"
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Oahu, Hawaii</p>
+    <p><a href="mailto:db2019@hawaii.edu">db2019@hawaii.edu</a></p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+news: true
+selected_papers: true
+social: true
 ---
 
-As a Risk Operational Analyst with Honolulu Disposal Service, I engage with the intricacies of data to navigate the complexities of operational risk. My educational path at the University of Hawaii, where I studied Economics and Psychology with a focus on Econometrics and Research Methods, has equipped me with the analytical acumen to transform data into strategic assets. This expertise is demonstrated through my initiative in establishing a comprehensive data infrastructure, incorporating tools such as Power BI and Python, to streamline and enhance our analytical processes.
+I am a SQL Programmer Analyst at the University of Hawaii Foundation, specializing in data pipelines, workflow automation, and reporting solutions that support business decisions. My work spans Oracle PL/SQL, Python, Alteryx, and Crystal Reports, with a focus on making data reliable, accessible, and useful.
 
-My professional journey includes a significant academic collaboration with Professor Gunter Meissner, which produced the research paper titled "Kurtosis: a poor measure of risk." In this project, I programmed over 15 statistical models to critically evaluate and challenge traditional measures of risk, utilizing advanced relationships in probability distributions. This research not only honed my analytical skills but also highlighted my ability to approach complex risk assessments with a fresh perspective.
+In my current role, I deliver more than 40 custom SQL data solutions each month for executive leadership and department stakeholders. I develop and maintain PL/SQL packages supporting overnight ETL workflows, external integrations, and production data pipelines. My automation work includes connecting internal Oracle databases with the Mailchimp API for marketing analytics and streamlining recurring workflows to reduce manual processing by approximately 16 hours per week.
 
-Fluent in programming languages like Python, Julia, and R, and with a firm grasp of web development and computational principles, my goal is to seamlessly transition into the finance sector. Here, I aspire to apply my data dexterity to fortify financial strategies and risk resolution.
+Previously, as an Operational Risk Analyst at Honolulu Disposal Service, I built an ETL pipeline that transformed more than five years of operational data into a foundation for enterprise reporting in SQL Server. I developed Power BI and Streamlit dashboards to identify underperforming assets and conducted statistical analysis to support executive investment decisions.
 
-Originating from the vibrant landscapes of Hawaii, my passion for exploration transcends the professional sphere, as I revel in the rich tapestry of cultures experienced through my travels. This global perspective is a silent partner in my analytical pursuits, reminding me that data, much like life, is an adventure — best navigated with agility and an open mind.
+I graduated from the University of Hawaii in May 2024 with a double major in Economics and Psychology, focusing on Econometrics, Statistics, and Research Methods, and earning Dean’s List distinction. My education also included study abroad in Florence, Italy, and coursework in Financial Correlations through Columbia University’s visiting student post-baccalaureate program.
+
+My research interests connect statistical theory with practical analysis. For the ongoing research project “Kurtosis: a Poor Measure of Tail Risk,” I developed more than 20 statistical models of probability distributions using Python and Streamlit to explore how kurtosis, mean, variance, and standard deviation change as distribution parameters vary.
+
+I hold Alteryx Designer Core and Advanced certifications and the AWS Certified Cloud Practitioner certification. I am interested in opportunities across analytics and data engineering where I can build dependable data systems, automate repetitive work, and help teams make informed decisions.
