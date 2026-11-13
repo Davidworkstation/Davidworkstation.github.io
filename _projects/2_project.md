@@ -3,9 +3,8 @@ layout: page
 title: Brownian Motions
 description: 
 img: assets/img/GBM_noylims.png
-importance: 2
+importance: 3
 category: work
-giscus_comments: true
 ---
 
 This project explores stock price dynamics through **Geometric Brownian Motion (GBM)**, a stochastic model widely used in financial mathematics. By generating and plotting multiple simulated price paths, it illustrates how drift and volatility combine to produce different outcomes from the same starting conditions.
