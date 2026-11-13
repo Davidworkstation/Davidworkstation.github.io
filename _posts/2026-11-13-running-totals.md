@@ -14,13 +14,13 @@ That small change in the question changes how we approach the data. A lifetime t
 This is where running totals become useful.
 
 Imagine a donor with the following gift history:
-
 | Gift date | Gift amount | Running total |
 |---|---:|---:|
 | January 15, 2025 | $2,000 | $2,000 |
 | April 10, 2025 | $3,000 | $5,000 |
 | September 20, 2025 | $5,000 | $10,000 |
 | December 5, 2025 | $2,000 | $12,000 |
+
 
 If membership begins when a donor reaches $10,000, the date we want is September 20, 2025. The December gift contributes to their current total, but they had already qualified by then.
 
