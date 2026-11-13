@@ -4,7 +4,7 @@ title: Value at Risk Dashboard
 description: 
 img: assets/img/VaR_Dashboard.jpg
 importance: 1
-category: work
+category: Econometrics
 ---
 
 <div class="row justify-content-sm-center">
