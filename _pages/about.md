@@ -12,8 +12,8 @@ profile:
     <p>Oahu, Hawaii</p>
     <p><a href="mailto:db2019@hawaii.edu">db2019@hawaii.edu</a></p>
 
-news: true
-selected_papers: true
+news: false
+selected_papers: false
 social: true
 ---
 
