@@ -35,8 +35,8 @@ The project combines statistical modeling, numerical simulation, and interactive
 
 [View the source code on GitHub](https://github.com/Davidworkstation/Conditionally_Independant_Correlation_CID)
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/CID_subplots.jpg" title="" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-sm-center">
+    <div>
+        {% include figure.liquid path="assets/img/CID_subplots.jpg" title="CID Subplots" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
