@@ -127,8 +127,11 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Data Generalist # blog_name will be displayed in your blog page
-blog_description: A glimpse into my career journey. Thanks for stopping by.
+blog_name: Data Generalist
+blog_description: "Practical lessons in SQL, Python, analytics, and data engineering."
+
+display_tags: ["sql", "fundraising", "window-functions"]
+display_categories: []
 permalink: /blog/:year/:title/
 
 # Pagination
