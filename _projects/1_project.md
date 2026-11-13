@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Conditionally Independent Diffusion (CID) model
-description: yes
+description:
 img: assets/img/CID_streamlitapp_demo_image.png
 importance: 1
 category: work
