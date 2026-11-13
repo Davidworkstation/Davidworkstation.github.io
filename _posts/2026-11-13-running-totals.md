@@ -14,6 +14,7 @@ That small change in the question changes how we approach the data. A lifetime t
 This is where running totals become useful.
 
 Imagine a donor with the following gift history:
+
 | Gift date | Gift amount | Running total |
 |---|---:|---:|
 | January 15, 2025 | $2,000 | $2,000 |
