@@ -1,81 +1,29 @@
 ---
 layout: page
 title: Brownian Motions
-description: a project with a background image and giscus comments
+description: 
 img: assets/img/GBM_noylims.png
 importance: 2
 category: work
 giscus_comments: true
 ---
 
-Brownian motion, named after the botanist Robert Brown, is a mathematical model used to describe random movements, originally observed in particles suspended in fluid. In the context of stocks and econometrics, it's referred to as the Geometric Brownian Motion (GBM). This model is crucial for modeling stock prices because it incorporates key characteristics of stock behavior: the prices are continuous (no jumps), and the percentage changes in prices are normally distributed with constant drift (mean return rate) and volatility (variance of returns), making stock price movements both random and directionally influenced over time.
+This project explores stock price dynamics through **Geometric Brownian Motion (GBM)**, a stochastic model widely used in financial mathematics. By generating and plotting multiple simulated price paths, it illustrates how drift and volatility combine to produce different outcomes from the same starting conditions.
 
-GBM is widely used in financial mathematics, particularly in the Black-Scholes model for option pricing, where it helps calculate the fair prices of options, assuming that the underlying stock prices follow a lognormal distribution. This assumption allows for the modeling of stock price dynamics over time, considering the continuous compounding of returns and the randomness introduced by market forces. In practical terms, this means predicting future stock prices based on historical volatility and expected return, providing a fundamental tool for risk management and investment strategies in financial markets.
+GBM models the evolution of an asset’s price using the stochastic differential equation:
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+$$
+dS_t = \mu S_t\,dt + \sigma S_t\,dW_t
+$$
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: assets/img/GBM_noylims.png
-    ---
+Here, \(S_t\) is the asset price, \(\mu\) is the drift parameter, \(\sigma\) is volatility, and \(W_t\) is a standard Wiener process. The drift governs the expected rate of price growth, while the stochastic component introduces random fluctuations.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/GBM_noylims.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Under constant drift and volatility, GBM produces normally distributed log returns and lognormally distributed prices. Starting from a positive price, its paths remain positive and continuous.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The visualization compares multiple simulated trajectories over time. Although each path follows the same underlying assumptions, accumulated random shocks can produce substantially different outcomes. Some paths remain relatively subdued, while others experience pronounced growth, illustrating the asymmetry of the lognormal price distribution and the effects of compounding.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+GBM also provides the underlying stock-price dynamics in the classical Black–Scholes–Merton option pricing framework. Its tractability makes it a useful starting point for studying financial uncertainty, Monte Carlo simulation, and derivatives valuation.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+These simulations represent possible outcomes under a specified model rather than forecasts of individual stock prices. Constant volatility and continuous paths are simplifying assumptions; real markets can exhibit changing volatility and sudden price jumps.
 
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+This project connects stochastic modeling with visual analysis, making the effects of randomness, compounding, and model assumptions easier to examine.
