@@ -41,4 +41,3 @@ The project combines statistical modeling, numerical simulation, and interactive
         {% include figure.liquid loading="eager" path="assets/img/CID_subplots.jpg" title="" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
