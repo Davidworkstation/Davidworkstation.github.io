@@ -7,6 +7,18 @@ importance: 3
 category: work
 ---
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/cora_vol1_vol2.jpg" title="Cora vs Volatility 1 vs Volatility 2" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/gamma_s2_vol1_vol2.jpg" title="Gamma S2 vs Volatility 1 and Volatility 2" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/opt_price_correlation_stock_price.jpg" title="Options Price vs Correlation vs Stock Price" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 This project implements an interactive exchange option pricing model within the Black–Scholes–Merton framework, allowing users to explore how underlying asset prices, volatilities, and correlation affect an option’s value and risk sensitivities.
 
 An exchange option gives the holder the right, but not the obligation, to exchange one asset for another at expiration.
@@ -30,15 +42,3 @@ The interactive interface allows users to adjust model inputs and visualize a se
 This project combines derivatives valuation, sensitivity analysis, and interactive visualization to make the behavior of a two-asset option easier to investigate.
 
 For questions about the model or my other projects, feel free to connect with me on LinkedIn.
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/cora_vol1_vol2.jpg" title="Cora vs Volatility 1 vs Volatility 2" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/gamma_s2_vol1_vol2.jpg" title="Gamma S2 vs Volatility 1 and Volatility 2" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/opt_price_correlation_stock_price.jpg" title="Options Price vs Correlation vs Stock Price" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
