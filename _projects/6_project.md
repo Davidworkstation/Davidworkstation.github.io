@@ -1,80 +1,36 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
-category: fun
+title: Regression Forecasting
+description: Regression Forecasting on JP Morgan Cash Flow Data
+img: assets/img/JPMorgan_Regression_Dashboard_Preview.png
+importance: 1
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/assets/img/JPMorgan_Regression_Dashboard_Preview.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+This project explores trends in **JPMorgan Chase’s historical cash-flow data** through an interactive polynomial regression dashboard. Built with **Python and Streamlit**, it allows users to compare how different polynomial degrees represent the same financial time series.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+The project combines data collection, preparation, modeling, and visualization. A web-scraping script uses Selenium and Beautiful Soup to extract quarterly cash-flow statement data from Macrotrends, which is organized into a CSV dataset for analysis.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Within the dashboard, users can select a cash-flow statement variable and compare **four independently adjustable polynomial fits** side by side. Each chart overlays the observed values with a fitted curve, making differences between model specifications easy to inspect.
 
-{% raw %}
+Polynomial regression approximates the selected series as a function of time:
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+$$
+y_t = \beta_0 + \beta_1t + \beta_2t^2 + \cdots + \beta_dt^d + \varepsilon_t
+$$
 
-{% endraw %}
+The degree \(d\) determines the model’s flexibility. Lower-degree polynomials summarize broad movements, while higher-degree polynomials can follow more detailed fluctuations. The application uses NumPy’s least-squares polynomial fitting functions to estimate these curves.
+
+A central focus is the **tradeoff between model complexity and overfitting**. A curve that closely follows historical observations may also capture noise or isolated movements, limiting its usefulness beyond the observed period. The dashboard supports exploratory, in-sample comparison; it does not establish forecasting accuracy.
+
+This project demonstrates a workflow for turning financial statement data into an interactive analytical tool, connecting web scraping and data preparation with regression modeling and visual interpretation.
+
+**Technologies:** Python, Streamlit, NumPy, pandas, Plotly, Selenium, and Beautiful Soup.
+
+[View the source code on GitHub](https://github.com/Davidworkstation/JPMorgan_CashFlow_PolynomialRegression)
