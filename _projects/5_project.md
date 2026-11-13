@@ -4,7 +4,7 @@ title: One-Factor Gaussian Copula
 description: 
 img: assets/img/OFGC_Dashboard_Preview.png
 importance: 1
-category: work
+category: Econometrics
 ---
 
 <div class="row">
