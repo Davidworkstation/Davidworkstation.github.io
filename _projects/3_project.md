@@ -4,7 +4,7 @@ title: Exchange Options Pricing Model
 description: 
 img: assets/img/cora_vol1_vol2.jpg
 importance: 3
-category: work
+category: Econometrics
 ---
 
 <div class="row">
