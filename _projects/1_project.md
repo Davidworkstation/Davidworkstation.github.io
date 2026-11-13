@@ -4,7 +4,7 @@ title: Conditionally Independent Diffusion (CID) model
 description:
 img: assets/img/CID_streamlitapp_demo_image.png
 importance: 1
-category: work
+category: Econometrics
 ---
 
 This project explores conditional independence through an interactive simulation of a Gaussian factor model. Built with Python, Streamlit, and Plotly, the application demonstrates how a shared market factor and individual random components determine the behavior of two modeled variables.
