@@ -1,80 +1,33 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Value at Risk Dashboard
+description: 
+img: assets/img/VaR_Dashboard.jpg
+importance: 1
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div>
+        {% include figure.liquid path="assets/img/VaR_Dashboard.jpg" title="Dashboard" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+This project investigates how probability distribution assumptions affect estimates of financial loss and tail risk. Built with **Python and Dash**, the interactive dashboard combines distribution fitting, goodness-of-fit testing, and risk measurement in a single analytical interface.
 
-{% raw %}
+The model compares five candidate distributions: **normal, lognormal, Weibull, exponential, and generalized Pareto**. By fitting different distributions to loss data, the application explores how alternative assumptions change the estimated likelihood and severity of large losses.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+The dashboard reports two key risk measures:
 
-{% endraw %}
+- **Value at Risk (VaR):** the loss quantile at a specified confidence level, representing a threshold exceeded with a corresponding small probability.
+- **Expected Shortfall (ES):** the average loss in the tail beyond that threshold for a continuous loss distribution, providing insight into the severity of extreme outcomes.
+
+To evaluate distributional fit, the project incorporates **Kolmogorov–Smirnov, Anderson–Darling, and Cramér–von Mises** diagnostics. These assess discrepancies between the empirical and modeled distributions, with Anderson–Darling placing greater emphasis on the tails—a particularly relevant consideration in risk analysis.
+
+The interface displays a loss histogram alongside fitted probability density curves and risk thresholds. Supporting tables present goodness-of-fit statistics and risk estimates for each distribution, allowing users to compare model behavior visually and numerically.
+
+The example analysis uses simulated losses constructed from normal and exponential components. This provides a controlled setting for exploring how candidate distributions represent a loss process with different underlying characteristics.
+
+A central focus is **model risk**: applying different distributional assumptions to the same data can produce materially different VaR and Expected Shortfall estimates. The dashboard makes those differences visible and supports evaluating statistical fit alongside the behavior of the loss distribution’s tail.
+
+**Technologies:** Python and Dash.
