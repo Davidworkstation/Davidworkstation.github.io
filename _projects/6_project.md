@@ -4,7 +4,7 @@ title: Regression Forecasting
 description: Regression Forecasting on JP Morgan Cash Flow Data
 img: assets/img/JPMorgan_Regression_Dashboard_Preview.png
 importance: 1
-category: work
+category: Econometrics
 ---
 
 <div class="row">
