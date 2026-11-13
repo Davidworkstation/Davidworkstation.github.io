@@ -127,8 +127,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Data Generalist
-blog_description: "Practical lessons in SQL, Python, analytics, and data engineering."
+blog_name: The Data Commonwealth
+blog_description: "Interesting patterns, unexpected findings, and things worth exploring in data."
 
 display_tags: ["sql", "fundraising", "window-functions"]
 display_categories: []
